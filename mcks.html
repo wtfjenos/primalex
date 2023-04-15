@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<style>
+/* CSS code for online shop design */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc((100% - 40px) / 3);
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #f1c40f;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 3s infinite linear;
+}
+
+.side {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.left {
+  transform: rotateY(-90deg) translateX(-100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateX(100px);
+}
+
+.top {
+  transform: rotateX(-90deg) translateY(-100px);
+}
+
+.bottom {
+  transform: rotateX(90deg) translateY(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+<head>
+	<title>My Online Shop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>PRIMALEX</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="mcks.html">Products</a></li>
+				<li><a href="mcka.html">About</a></li>
+				<li><a href="mckc.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+
+		<section id="products">
+			<h2>Our Products</h2>
+			<ul>
+				<li>
+					<h3>Product 1</h3>
+					<img src="iml_plus_bily_15kg_lowres.png" width: alt="Plus biely">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $50</p>
+					<button><a href="cart.html">Add to Cart</a></button>
+				</li>
+				<li>
+					<h3>Product 2</h3>
+					<img src="primalex_plus_bareveny.png" alt="Plus biely">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $80</p>
+					<button><a href="cart.html">Add to Cart</a></button>
+				</li>
+				<li>
+					<h3>Product 3</h3>
+					<img src="iml_plus_bily_15kg_lowres.png" alt="Plus biely">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $120</p>
+					<button><a href="cart.html">Add to Cart</a></button>
+				</li>
+			</ul>
+                        <ul>
+                                <li>
+					<h3>Product 1</h3>
+					<img src="product1.jpg" alt="Product 1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $50</p>
+					<button>Add to Cart</button>
+				</li>
+				<li>
+					<h3>Product 2</h3>
+					<img src="product2.jpg" alt="Product 2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $80</p>
+					<button><a href="cart.html">Add to Cart</a></button>
+				</li>
+				<li>
+					<h3>Product 3</h3>
+					<img src="product3.jpg" alt="Product 3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel turpis eu mauris consectetur rhoncus vitae a augue.</p>
+					<p>Price: $120</p>
+					<button><a href="cart.html">Add to Cart</a></button>
+				</li>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 wtfjenos. All rights reserved.</p>
+	</footer>
+</body>
+</html>
